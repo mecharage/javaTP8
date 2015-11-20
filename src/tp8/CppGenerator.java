@@ -28,7 +28,7 @@ public class CppGenerator {
 
 	private static final Map<Class<?>, TypeInfo> typeInfo = new HashMap<Class<?>, TypeInfo>() {
 		{
-			put(ArrayList.class, new TypeInfo("std::string", "string"));
+			put(String.class, new TypeInfo("std::string", "string"));
 			put(ArrayList.class, new TypeInfo("std::vector<?>", "vector"));
 		}
 	};
